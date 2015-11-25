@@ -46,7 +46,8 @@ public class Robot extends IterativeRobot {
      */
     public void teleopPeriodic() {
     	mainDrive.mecanumDrive_Cartesian(driveStick.getAxis(Joystick.AxisType.kX), driveStick.getAxis(Joystick.AxisType.kY), otherstick.getAxis(Joystick.AxisType.kY), 0);
-    	//mainDrive.mecanumDrive_Cartesian(driveStick.getX(), driveStick.getY(), otherStick.getY(), 0;
+    	//mainDrive.mecanumDrive_Cartesian(driveStick.getX(), driveStick.getY(), otherstick.getZ(), 0);
+    	
     	if(otherstick.getRawButton(4)) {
     		mainDrive.mecanumDrive_Polar( 0, 0, -90);
     	}
